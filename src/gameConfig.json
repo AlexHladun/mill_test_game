@@ -1,0 +1,317 @@
+{
+  "numberOfCorrectAnswers": 1,
+  "questions": [
+    {
+      "question": "What is the color of the White House?",
+      "reward": "500",
+      "options": [
+        {
+          "label": "A",
+          "value": "Pink",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "Blue",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "value": "White",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "value": "Rainbow",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "How many legs does a spider typically have?",
+      "reward": "1000",
+      "options": [
+        {
+          "label": "A",
+          "value": "100",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "2",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "value": "8",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "value": "4",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What do you call a group of crows?",
+      "reward": "2000",
+      "options": [
+        {
+          "label": "A",
+          "value": "A flock",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "A murder",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "value": "A gaggle",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "value": "A herd",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "reward": "4000",
+      "options": [
+        {
+          "label": "A",
+          "value": "Sydney",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "Melbourne",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "value": "Brisbane",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "value": "Canberra",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "What is the world's largest ocean?",
+      "reward": "8000",
+      "options": [
+        {
+          "label": "A",
+          "value": "Atlantic",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "Indian",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "value": "Pacific",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "value": "Arctic",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Who wrote the 'Game of Thrones' series of books?",
+      "reward": "16000",
+      "options": [
+        {
+          "label": "A",
+          "value": "J.K. Rowling",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "George R.R. Martin",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "value": "Stephen King",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "value": "Suzanne Collins",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is the square root of 144?",
+      "reward": "32000",
+      "options": [
+        {
+          "label": "A",
+          "value": "12",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "value": "14",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "value": "16",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "value": "18",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Which planet is known as the 'Red Planet'?",
+      "reward": "64000",
+      "options": [
+        {
+          "label": "A",
+          "value": "Venus",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "Mars",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "value": "Jupiter",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "value": "Saturn",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "reward": "125000",
+      "options": [
+        {
+          "label": "A",
+          "value": "Gd",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "Go",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "value": "Au",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "value": "Ag",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "reward": "250000",
+      "options": [
+        {
+          "label": "A",
+          "value": "Vincent Van Gogh",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "Pablo Picasso",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "value": "Leonardo da Vinci",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "value": "Michelangelo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "What is the name of the longest river in the world?",
+      "reward": "500000",
+      "options": [
+        {
+          "label": "A",
+          "value": "Amazon",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "Nile",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "value": "Yangtze",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "value": "Mississippi",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Who was the first person to walk on the moon?",
+      "reward": "1000000",
+      "options": [
+        {
+          "label": "A",
+          "value": "Buzz Aldrin",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "value": "Neil Armstrong",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "value": "Yuri Gagarin",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "value": "Michael Collins",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

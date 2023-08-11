@@ -1,0 +1,27 @@
+.button-container {
+    width: 8em;
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    border-radius: 12px;
+    padding: 0.625em 0.75em;
+    background-color: #FF8B37;
+    font-weight: 600;
+    border: none;
+    font-size: 0.625em;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+button:hover {
+    cursor: default;
+    background-color: #FFAC70;
+}
+
+button:active {
+    background-color: #E87928;
+}

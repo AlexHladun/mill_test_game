@@ -1,0 +1,42 @@
+
+.QuestionPage-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.Question-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F5F5F7;
+    width: 75%;
+    padding: 3.75em 0 2em 2.5em;
+}
+
+.Question-text {
+    margin-top: 0;
+}
+
+.Options-container {
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 0.6em;
+}
+
+.Options-label {
+    color: #FF8B37;
+    margin-right: 0.25em;
+    font-weight: 600;
+}
+
+.Options-value {
+    font-weight: 400;
+}
+
+
+
