@@ -23,3 +23,122 @@
     font-size: 1.75em;
     margin-bottom: 1.5em;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .StartPage-background {
+        padding: 0 0.5em; /* Зменшуємо відступи */
+    }
+    .Hand-container {
+        width: 100%;
+        height: 40%;
+    }
+
+    .Hand-container svg {
+        width: 100%;
+        height: 100%
+    }
+    .StartPage-splitBackground {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Greetings-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Greetings-text {
+        align-self: center;
+        font-size: 1em;
+        margin-bottom: 3em;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 820px) {
+    .StartPage-background {
+        padding: 0 1.5em; /* Зменшуємо відступи */
+    }
+    .StartPage-splitBackground {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Greetings-text {
+        align-self: center;
+        font-size: 1.5em;
+        margin-bottom: 3em;
+    }
+    .Greetings-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1024px){
+    .StartPage-background {
+        padding: 0 2em; /* Зменшуємо відступи */
+    }
+
+    .StartPage-splitBackground {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .Greetings-text {
+        align-self: center;
+        font-size: 2em;
+        margin-bottom: 3em;
+    }
+    .Greetings-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Hand-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .Hand-container svg {
+        width: 100%;
+        height: 100%
+    }
+}
+
+@media  screen and (min-width: 1500px) and (max-width: 3860px) {
+    .StartPage-background {
+        padding: 0 4em; /* Зменшуємо відступи */
+    }
+    .Hand-container {
+        width: 70%;
+        height: 70%;
+    }
+
+    .Hand-container svg {
+        width: 100%;
+        height: 100%
+    }
+    .Greetings-container {
+        width: 100%
+    }
+    .Greetings-text {
+        align-self: center;
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+}
+
+
+
+
+
+
+

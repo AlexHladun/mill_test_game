@@ -9,7 +9,10 @@ import {formatNumberWithCommas, highlightReward} from "../../utils";
 import {useAppDispatch} from "../../utils/hooks";
 import {nextQuestionAction} from "../../redux/actions";
 import {useNavigate} from "react-router-dom";
+import {useMediaQuery} from '@uidotdev/usehooks'
 import {IQuestion} from "../../redux/mainSlice";
+import {CloseMenu} from "../../assets/CloseMenu";
+import {OpenMenu} from "../../assets/OpenMenu";
 
 
 interface IRenderRewards {
@@ -34,8 +37,11 @@ export const QuestionPage: React.FC=() => {
 	const numberOfCorrectAnswers=useSelector(selectNumberOfAnswers)
 	const options=currentQuestion?.options||[];
 
+	const isMobile = useMediaQuery('only screen and (min-width: 320px) and (max-width: 820px)')
 	const [selectedAnswers, setSelectedAnswers]=useState<string[]>([]);
 	const [isCorrectAnswers, setIsCorrectAnswers]=useState<boolean | null>(null);
+
+	const [isOpenMenu, setIsOpenMenu]=useState<null | boolean>(null)
 
 	const handleSelectAnswer=(selectedOption: string) => {
 		if (selectedAnswers.length < numberOfCorrectAnswers) {
@@ -77,7 +83,7 @@ export const QuestionPage: React.FC=() => {
 		} else {
 			navigate('/final')
 		}
-	}, [currentIndex])
+	}, [currentIndex, navigate])
 
 
 	const renderQuestionOptions=(
@@ -94,8 +100,8 @@ export const QuestionPage: React.FC=() => {
 			isCorrect: boolean
 		}, index: number) => {
 			const isSelected=selectedAnswers.includes(option.label);
-			const isCorrect=isCorrectAnswers !== null && isSelected && isCorrectAnswers;
-			const isWrong=isCorrectAnswers !== null && isSelected && !isCorrectAnswers;
+			const isCorrect=isCorrectAnswers !== null&&isSelected&&isCorrectAnswers;
+			const isWrong=isCorrectAnswers !== null&&isSelected&& !isCorrectAnswers;
 			const optionCellStyles: {
 				selected?: boolean;
 				correct?: boolean;
@@ -145,7 +151,8 @@ export const QuestionPage: React.FC=() => {
 	};
 	return (
 		<div className={"QuestionPage-container"}>
-			<div className={"Question-block"}>
+			<div className={`Reward-menu`} onClick={() => setIsOpenMenu(prev => !prev)}>{isOpenMenu ? <CloseMenu /> : <OpenMenu />}</div>
+			<div className={"Question-block"} style={{display: isMobile ? isOpenMenu ? 'none' : 'flex' : 'flex'}}>
 				<h1 className={"Question-text"}>{currentQuestion?.question}</h1>
 				<div className={"Options-container"}>
 					{renderQuestionOptions(
@@ -158,13 +165,15 @@ export const QuestionPage: React.FC=() => {
 					)}
 				</div>
 			</div>
-			<div className={"Reward-block"}>
-				{renderRewards({
-					questions: questions.questions.map(question => question.reward),
-					currentIndex,
-					highlightReward,
-					formatNumberWithCommas
-				})}
+			<div className={`Reward-container`} style={{display: isMobile ? isOpenMenu ? 'flex' : 'none' : 'flex'}}>
+				<div className={`Reward-block `}>
+					{renderRewards({
+						questions: questions.questions.map(question => question.reward),
+						currentIndex,
+						highlightReward,
+						formatNumberWithCommas
+					})}
+				</div>
 			</div>
 		</div>
 
