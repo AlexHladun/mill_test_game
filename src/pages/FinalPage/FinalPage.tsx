@@ -1,6 +1,5 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import CommonButton from "../../components/Button";
-// import {ReactComponentElement as HandLogo} from 'assets/hand.svg'
 import {HandLogo} from "../../assets/HandLogo";
 import {useNavigate} from "react-router-dom";
 import './FinalPage.styles.css'
